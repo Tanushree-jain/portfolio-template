@@ -12,18 +12,6 @@
   }
 }
 
-/* Style for the path line */
-.experience-item::before {
-  content: '';
-  position: absolute;
-  top: 1rem; /* Start the line below the top padding */
-  left: 2px; /* Align with the left border */
-  bottom: -3rem; /* Extend line downwards, matching margin-bottom */
-  width: 2px;
-  background-color: var(--secondary-color); /* Path color */
-  z-index: -1; /* Ensure path is behind content */
-}
-
 /* Hide the path line for the last item */
 .experience-item:last-child::before {
   display: none;
