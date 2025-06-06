@@ -18,18 +18,18 @@
 }
 
 [data-theme="dark"] {
-  /* Dark Theme - Green Palette */
-  --primary-color: #34d399; /* Vibrant Green */
-  --secondary-color: #9ca3af; /* Light Gray */
+  /* Dark Theme - Neon Palette */
+  --primary-color: #00ffff; /* Cyan/Aqua Neon */
+  --secondary-color: #ff69b4; /* Hot Pink Neon */
   --background-color: #0f172a;
   --text-color: #ffffff;
   --text-muted: #e2e8f0;
   --card-bg: #1e293b;
   --border-color: #334155;
   --navbar-bg: #1e293b;
-  --hover-color: #6ee7b7; /* Lighter Green */
-  --link-color: #34d399; /* Vibrant Green */
-  --link-hover-color: #6ee7b7; /* Lighter Green */
+  --hover-color: #00bfff; /* Deep Sky Blue Neon */
+  --link-color: #00ffff; /* Cyan/Aqua Neon */
+  --link-hover-color: #00bfff; /* Deep Sky Blue Neon */
 }
 
 /* Global Styles */

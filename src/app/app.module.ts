@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { AboutComponent } from './components/about/about.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { EducationComponent } from './components/education/education.component';
@@ -15,7 +14,6 @@ import { AppRoutingModule } from './app-routing.module';
   declarations: [
     AppComponent,
     NavbarComponent,
-    AboutComponent,
     ProfileComponent,
     ExperienceComponent,
     EducationComponent,
