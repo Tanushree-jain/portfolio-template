@@ -1,0 +1,87 @@
+<section id="skills" class="mb-5">
+  <div class="card p-4">
+    <h2 class="mb-4">Technical Skills</h2>
+    
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Languages</h5>
+            <ul>
+              <li *ngFor="let skill of technicalSkills.languages">{{ skill }}</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Backend</h5>
+            <ul>
+              <li *ngFor="let skill of technicalSkills.backend">{{ skill }}</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Frontend</h5>
+            <ul>
+              <li *ngFor="let skill of technicalSkills.frontend">{{ skill }}</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Clouds</h5>
+            <ul>
+              <li *ngFor="let skill of technicalSkills.clouds">{{ skill }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Databases</h5>
+            <ul>
+              <li *ngFor="let skill of technicalSkills.databases">{{ skill }}</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Developer Tools</h5>
+            <ul>
+              <li *ngFor="let skill of technicalSkills.developerTools">{{ skill }}</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Additional Skills</h5>
+            <ul>
+              <li *ngFor="let skill of technicalSkills.additionalSkills">{{ skill }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="mt-5 mb-4">Certificates</h2>
+    <div class="list-group">
+      <div *ngFor="let cert of certificates" class="list-group-item list-group-item-action flex-column align-items-start mb-3">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">{{ cert.name }}</h5>
+          <small class="text-muted">Issued: {{ cert.issuedDate }}</small>
+        </div>
+        <p class="mb-1">Issued by: {{ cert.issuer }}</p>
+        <small *ngIf="cert.link">
+          <a [href]="cert.link" target="_blank">Certificate Link</a>
+        </small>
+      </div>
+    </div>
+  </div>
+</section> 

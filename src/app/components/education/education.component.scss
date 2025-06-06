@@ -1,9 +1,4 @@
-:host {
-  display: block;
-  min-height: 100vh;
-}
-
-.education-item, .experience-item {
+.education-item {
   padding: 1rem;
   border-radius: 0.5rem;
   background-color: var(--card-bg);
@@ -23,15 +18,4 @@
   i {
     margin-right: 0.5rem;
   }
-}
-
-.list-unstyled {
-  li {
-    display: flex;
-    align-items: flex-start;
-    
-    i {
-      margin-top: 0.25rem;
-    }
-  }
-}
+} 
