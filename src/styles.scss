@@ -3,33 +3,33 @@
 
 /* Theme Variables */
 :root {
-  /* Light Theme */
-  --primary-color: #2563eb;
-  --secondary-color: #64748b;
+  /* Light Theme - Green Palette */
+  --primary-color: #059669; /* Green */
+  --secondary-color: #4b5563; /* Dark Gray */
   --background-color: #ffffff;
   --text-color: #1e293b;
   --text-muted: #64748b;
   --card-bg: #f8fafc;
   --border-color: #e2e8f0;
   --navbar-bg: #ffffff;
-  --hover-color: #3b82f6;
-  --link-color: #2563eb;
-  --link-hover-color: #1d4ed8;
+  --hover-color: #047857; /* Darker Green */
+  --link-color: #059669; /* Green */
+  --link-hover-color: #047857; /* Darker Green */
 }
 
 [data-theme="dark"] {
-  /* Dark Theme */
-  --primary-color: #3b82f6;
-  --secondary-color: #94a3b8;
+  /* Dark Theme - Green Palette */
+  --primary-color: #34d399; /* Vibrant Green */
+  --secondary-color: #9ca3af; /* Light Gray */
   --background-color: #0f172a;
   --text-color: #ffffff;
   --text-muted: #e2e8f0;
   --card-bg: #1e293b;
   --border-color: #334155;
   --navbar-bg: #1e293b;
-  --hover-color: #60a5fa;
-  --link-color: #60a5fa;
-  --link-hover-color: #93c5fd;
+  --hover-color: #6ee7b7; /* Lighter Green */
+  --link-color: #34d399; /* Vibrant Green */
+  --link-hover-color: #6ee7b7; /* Lighter Green */
 }
 
 /* Global Styles */

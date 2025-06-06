@@ -7,6 +7,8 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { EducationComponent } from './components/education/education.component';
 import { SkillsComponent } from './components/skills/skills.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { CertificatesComponent } from './components/certificates/certificates.component';
 import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
@@ -17,7 +19,9 @@ import { AppRoutingModule } from './app-routing.module';
     ProfileComponent,
     ExperienceComponent,
     EducationComponent,
-    SkillsComponent
+    SkillsComponent,
+    FooterComponent,
+    CertificatesComponent
   ],
   imports: [
     BrowserModule,

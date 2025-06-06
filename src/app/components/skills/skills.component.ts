@@ -1,12 +1,5 @@
 import { Component } from '@angular/core';
 
-interface Certificate {
-  name: string;
-  issuer: string;
-  issuedDate: string;
-  link?: string;
-}
-
 interface Skills {
   languages: string[];
   backend: string[];
@@ -32,19 +25,4 @@ export class SkillsComponent {
     developerTools: ['Postman', 'VS Code', 'GitHub'],
     additionalSkills: ['API Development', 'Serverless Architecture', 'Scripting', 'Version Control (Git)']
   };
-
-  certificates: Certificate[] = [
-    {
-      name: 'Amazon Web Services Developer - Associate',
-      issuer: 'Amazon Web Services Training and Certification',
-      issuedDate: 'December 2023',
-      link: 'AWS Developer Associate Certificate'
-    },
-    {
-      name: 'Amazon Web Services Cloud Practitioner',
-      issuer: 'Amazon Web Services Training and Certification',
-      issuedDate: 'January 2024',
-      link: 'AWS Cloud Practitioner Certificate'
-    }
-  ];
 } 

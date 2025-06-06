@@ -1,0 +1,6 @@
+.profile-img {
+  width: 150px; /* Set fixed width */
+  height: 150px; /* Set fixed height */
+  object-fit: cover; /* To maintain aspect ratio */
+  border-radius: 50%; /* Ensure circular shape */
+}

@@ -1,6 +1,26 @@
 <section id="profile" class="mb-5">
   <div class="card p-4">
-    <h2 class="mb-4">Profile</h2>
+    <div class="d-flex align-items-center mb-4">
+      <img src="assets/profile.jpg" alt="Profile Image" class="img-fluid rounded-circle me-3 profile-img">
+      <div>
+        <h1 class="display-4 mb-0">{{ title }}</h1>
+        <p class="lead mb-0">{{ subtitle }}</p>
+      </div>
+    </div>
+    
+    <div class="mb-4">
+      <a [href]="'mailto:' + email" class="btn btn-outline-primary me-2">
+        <i class="bi bi-envelope"></i> Email
+      </a>
+      <a [href]="linkedin" class="btn btn-outline-primary me-2">
+        <i class="bi bi-linkedin"></i> LinkedIn
+      </a>
+      <a [href]="github" class="btn btn-outline-primary">
+        <i class="bi bi-github"></i> GitHub
+      </a>
+    </div>
+    
+    <h2 class="mb-3">Profile</h2>
     <p class="mb-0">{{ profileText }}</p>
   </div>
 </section> 
