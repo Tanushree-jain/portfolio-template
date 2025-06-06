@@ -1,1 +1,136 @@
 /* You can add global styles to this file, and also import other style files */
+@import "bootstrap/scss/bootstrap";
+
+/* Theme Variables */
+:root {
+  /* Light Theme */
+  --primary-color: #2563eb;
+  --secondary-color: #64748b;
+  --background-color: #ffffff;
+  --text-color: #1e293b;
+  --text-muted: #64748b;
+  --card-bg: #f8fafc;
+  --border-color: #e2e8f0;
+  --navbar-bg: #ffffff;
+  --hover-color: #3b82f6;
+  --link-color: #2563eb;
+  --link-hover-color: #1d4ed8;
+}
+
+[data-theme="dark"] {
+  /* Dark Theme */
+  --primary-color: #3b82f6;
+  --secondary-color: #94a3b8;
+  --background-color: #0f172a;
+  --text-color: #f8fafc;
+  --text-muted: #cbd5e1;
+  --card-bg: #1e293b;
+  --border-color: #334155;
+  --navbar-bg: #1e293b;
+  --hover-color: #60a5fa;
+  --link-color: #60a5fa;
+  --link-hover-color: #93c5fd;
+}
+
+/* Global Styles */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-color);
+}
+
+p {
+  color: var(--text-color);
+}
+
+.text-muted {
+  color: var(--text-muted) !important;
+}
+
+/* Links */
+a {
+  color: var(--link-color);
+  transition: color 0.3s ease;
+  
+  &:hover {
+    color: var(--link-hover-color);
+  }
+}
+
+/* Component Styles */
+.card {
+  background-color: var(--card-bg);
+  border-color: var(--border-color);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  
+  .card-title {
+    color: var(--text-color);
+  }
+  
+  .card-text {
+    color: var(--text-color);
+  }
+}
+
+.navbar {
+  background-color: var(--navbar-bg);
+  border-bottom: 1px solid var(--border-color);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.navbar-brand {
+  color: var(--primary-color) !important;
+}
+
+.nav-link {
+  color: var(--text-color) !important;
+  
+  &:hover {
+    color: var(--primary-color) !important;
+  }
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  
+  &:hover {
+    background-color: var(--hover-color);
+    border-color: var(--hover-color);
+  }
+}
+
+.btn-outline-primary {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+  
+  &:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--card-bg);
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--card-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secondary-color);
+  border-radius: 4px;
+  
+  &:hover {
+    background: var(--primary-color);
+  }
+}
