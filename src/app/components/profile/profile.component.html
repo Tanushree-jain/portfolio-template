@@ -1,26 +1,29 @@
 <section id="profile" class="mb-5">
-  <div class="card p-4">
-    <div class="d-flex align-items-center mb-4">
-      <img src="assets/profile.jpg" alt="Profile Image" class="img-fluid rounded-circle me-3 profile-img">
-      <div>
-        <h1 class="display-4 mb-0">{{ title }}</h1>
-        <p class="lead mb-0">{{ subtitle }}</p>
+  <div class="profile-container">
+    <div class="profile-image-container">
+      <img src="assets/profile.jpg" alt="Profile Image" class="profile-img">
+    </div>
+    <div class="profile-details">
+      <h1 class="name">Hello, I'm <br> {{ title }}</h1>
+      <div class="tags">
+        <span class="tag">Full Stack Developer</span>
+        <span class="tag">AWS Certified | 4+</span>
+      </div>
+      <div class="social-icons">
+        <a [href]="github" target="_blank" class="social-icon">
+          <i class="bi bi-github"></i>
+        </a>
+        <a [href]="linkedin" target="_blank" class="social-icon">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="https://your-other-link.com" target="_blank" class="social-icon">
+          <i class="bi bi-person-workspace"></i>
+        </a>
       </div>
     </div>
-    
-    <div class="mb-4">
-      <a [href]="'mailto:' + email" class="btn btn-outline-primary me-2">
-        <i class="bi bi-envelope"></i> Email
-      </a>
-      <a [href]="linkedin" class="btn btn-outline-primary me-2">
-        <i class="bi bi-linkedin"></i> LinkedIn
-      </a>
-      <a [href]="github" class="btn btn-outline-primary">
-        <i class="bi bi-github"></i> GitHub
-      </a>
-    </div>
-    
-    <h2 class="mb-3">Profile</h2>
-    <p class="mb-0">{{ profileText }}</p>
+  </div>
+  <div class="profile-summary-card">
+    <h2>Professional Summary</h2>
+    <p>{{ professionalSummary }}</p>
   </div>
 </section> 

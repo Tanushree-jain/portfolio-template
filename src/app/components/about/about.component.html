@@ -1,17 +1,11 @@
 <section id="about" class="mb-5">
-  <div class="card p-4">
-    <h1 class="display-4 mb-4">{{ title }}</h1>
-    <p class="lead">{{ subtitle }}</p>
-    <div class="mt-3">
-      <a [href]="'mailto:' + email" class="btn btn-outline-primary me-2">
-        <i class="bi bi-envelope"></i> Email
-      </a>
-      <a [href]="linkedin" class="btn btn-outline-primary me-2">
-        <i class="bi bi-linkedin"></i> LinkedIn
-      </a>
-      <a [href]="github" class="btn btn-outline-primary">
-        <i class="bi bi-github"></i> GitHub
-      </a>
-    </div>
+  <div class="about-card">
+    <h2 class="mb-3">About</h2>
+    <p>{{ aboutText }}</p>
+    <ul class="strengths-list">
+      <li *ngFor="let strength of strengths">
+        <i class="bi bi-check-circle-fill"></i> {{ strength }}
+      </li>
+    </ul>
   </div>
 </section> 

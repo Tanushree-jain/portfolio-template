@@ -6,9 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent {
-  title = 'Yash Kathrotiya';
-  subtitle = 'Software Developer | AWS Certified Developer Associate';
-  email = 'yashkathrotiya7048@gmail.com';
-  linkedin = 'https://linkedin.com/in/your-profile';
-  github = 'https://github.com/your-username';
+  aboutText = `Dedicated Full Stack Developer with 4 years in apperssieveLing p., launching Rrobust APIs, serverless infrastrusture, and beautiful Uis with React + AWS.`;
+  strengths = [
+    'Strong in DRY coolng, scalable design',
+    'Open to freelance, side projects, and mentorship'
+  ];
 } 

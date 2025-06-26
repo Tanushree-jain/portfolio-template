@@ -1,15 +1,39 @@
+@keyframes march {
+  to {
+    background-position-y: 20px;
+  }
+}
+
 .experience-item {
   position: relative;
   padding: 1rem;
   border-radius: 0.5rem;
   background-color: var(--card-bg);
   transition: transform 0.3s ease;
-  border-left: 4px solid var(--primary-color); /* Left border as part of path */
-  margin-bottom: 3rem; /* Increased margin-bottom to make space for circle and line */
+  margin-bottom: 3rem;
+  padding-left: 40px;
 
   &:hover {
     transform: translateY(-2px);
   }
+}
+
+.experience-item::before {
+  content: '';
+  position: absolute;
+  top: 1.5rem;
+  left: 15px;
+  bottom: -3rem;
+  width: 2px;
+  background: repeating-linear-gradient(
+    to bottom,
+    var(--primary-color),
+    var(--primary-color) 10px,
+    transparent 10px,
+    transparent 20px
+  );
+  background-size: 100% 20px;
+  animation: march 0.5s linear infinite;
 }
 
 /* Hide the path line for the last item */
@@ -22,7 +46,7 @@
   content: '';
   position: absolute;
   top: 1.5rem; /* Position the circle */
-  left: -9px; /* Position to the left of the border */
+  left: 8px; /* Position to the left of the border */
   width: 12px;
   height: 12px;
   background-color: var(--primary-color); /* Circle color */
