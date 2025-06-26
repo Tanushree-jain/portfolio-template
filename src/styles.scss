@@ -147,3 +147,19 @@ a {
 #skills ul li {
   color: var(--text-color) !important;
 }
+
+.main-content {
+  max-width: 950px;
+  margin: 0 auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  width: 100%;
+}
+
+@media (max-width: 1000px) {
+  .main-content {
+    max-width: 100%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
